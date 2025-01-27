@@ -1,0 +1,90 @@
+:root{
+    --brand : #20AD96;
+    --brandDark : #028176;
+    --brandLight : #F3FFFD;
+    --title : #333333;
+    --text : #666666;
+    --rounded : 10px;
+}
+
+body{
+    margin: 0;    
+    font-family: "Poppins", serif;    
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+.header{    
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*container que está dentro do header*/
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.container{
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+/*formatando todos os links que estão DENTRO do menu*/
+.menu a{
+    color: var(--title);
+    text-decoration: none; /*retira o sublinhado*/
+    margin-left: 40px;
+    font-size: 14px;
+}
+
+/*ao passar o mouse nos links do menu*/
+.menu a:hover{
+    color: var(--brand);
+    text-decoration: underline; /*add sublinhado*/
+}
+
+.btn{
+    background-color: var(--brand);
+    color: #ffffff !important;
+    padding: 12px 30px;
+    border-radius: var(--rounded);
+    text-decoration: none !important;    
+    display: inline-block;
+}
+
+.btn:hover{
+    background-color: var(--brandDark);
+}
+
+.banner{
+    height: 620px;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center; /*alinhamento vertical*/
+}
+
+.conteudo-banner{
+    width: 560px;
+}
+
+.conteudo-banner h1{
+    color: #ffffff;
+    font-size: 60px;
+    line-height: 100%;
+}
+
+.conteudo-banner p{
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.assinatura{
+    font-size: 16px !important;
+}
